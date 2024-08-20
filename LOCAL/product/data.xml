@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<product>
+  <title>Elewar: Fused Survivors</title>
+  <release-date></release-date>
+  <release-dates>
+    <release-date>21 August, 2024</release-date>
+  </release-dates>
+  
+  <website></website>
+
+  <!-- Link to request press copy: -->
+  <press-copy-request></press-copy-request>
+
+  <platforms>
+    <platform>
+      <name>Steam</name>
+      <link>https://store.steampowered.com/app/2489560/Elewar_Fused_Survivors/</link>
+    </platform>
+  </platforms>
+
+  <prices>
+    <price>
+      <currency>€</currency>
+      <value>0.00</value>
+    </price>
+  </prices>
+
+  <description>Bullet heaven roguelite with lots of bullet hell elements. Packed with game changing unlocks, lots of upgrades and ARPG-like systems. New gameplay systems even in the endgame.</description>
+
+  <!-- Choose between a single block: -->
+  <history>Early access on 3 Nov, 2023.
+		   Full release on 21 Aug, 2024.</history>
+
+  <!-- Or multiple blocks: -->
+  <!--
+  <histories>
+    <history>
+      <header></header>
+      <text></text>
+    </history>
+  </histories>
+  -->
+
+  <features>
+	<feature>As of 20 Aug. 2024 over 95% positive reviews out of 61.</feature>
+    <feature>300 unlocks with corresponding rewards, over 140 upgrades, item crafting.</feature>
+	<feature>5 challenging realms, each one unlocking new systems and challenging your build making.</feature>
+	<feature>12 character classes combined with a dual class system.</feature>
+	<feature>20 offensive spells, all upgradable through rarity system. Later on spells can be fused together.</feature>
+	<feature>30+ random events which can be triggered throughout a run.</feature>
+	<feature>Twitch integration. Viewers may choose which events happen to you.</feature>
+	<feature>Over 30 different steam leaderboards integrated into the game.</feature>
+  </features>
+
+  <trailers>
+    <trailer>
+      <name>Release Trailer</name>
+
+      <!-- Pick one: -->
+      <youtube>
+        pfR21CLGG98
+      </youtube>
+      
+    </trailer>
+  </trailers>
+  
+  
+  <quotes>
+    
+    <quote>
+      <description>I can't believe this game is free!! Really incredible game.
+
+Crafting your build during a run is thoughtful, and feels great.
+
+The meta-progression is robust and multifaceted.
+
+Seems like there are some secrets to uncover as well! Looking forward to all of it.</description>
+      <name>A friendly Steam reviewer</name>
+      <website>Steam review</website>
+      <link>https://steamcommunity.com/id/juniperseed/recommended/2489560/</link>
+    </quote>
+    <quote>
+      <description> It might be the best survivors-style game so far. Comparable to Rogue genesia.</description>
+      <name>A friendly Steam reviewer</name>
+      <website>Steam review</website>
+      <link>https://steamcommunity.com/id/ekirk/recommended/2489560/</link>
+    </quote>
+	
+	<quote>
+      <description>Amazing Rougelite survivors bullet hell game.
+The graphics might not be the best, but the game is free anyway, but it definitely makes up with the interesting ways you can upgrade your character in a run.
+Mechanically it's one of the best ones out there.</description>
+      <name>A friendly Steam reviewer</name>
+      <website>Steam review</website>
+      <link>https://steamcommunity.com/id/IchigoMait/recommended/2489560/</link>
+    </quote>
+	
+  </quotes>
+  
+  
+  
+  <additionals>
+    <additional>
+      <title></title>
+      <description></description>
+      <link></link>
+    </additional>
+  </additionals>
+
+
+  <contacts>
+    <contact>
+      <name>AL3xMK</name>
+
+      <!-- Pick one: -->
+      <mail>elewar.gaming@gmail.com</mail>
+      <link></link>
+    </contact>
+  </contacts>
+</product>

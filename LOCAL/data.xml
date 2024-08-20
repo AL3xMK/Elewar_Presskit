@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<company>
+  <title>Elewar Gaming</title>
+  <based-in>Germany</based-in>
+  <founding-date>03 November 2023</founding-date>
+  <website></website>
+  <press-contact>
+    elewar.gaming@gmail.com
+  </press-contact>
+
+  <!-- Google analytics ID: -->
+  <analytics></analytics>
+	<!-- 
+  <phone></phone>
+  <address>
+    <line>
+      
+    </line>
+    <line>
+     
+    </line>
+    <line>
+     
+    </line>
+  </address>
+
+  <socials>
+    <social>
+      <name></name>
+      <link>
+        
+      </link>
+    </social>
+  </socials>
+-->
+  <description>Solo-Developer</description>
+
+  <!-- Choose between a single block: -->
+  <history></history>
+
+  <!-- Or multiple blocks: -->
+  <!--
+  <histories>
+    <history>
+      <header></header>
+      <text></text>
+    </history>
+  </histories>
+  -->
+
+  
+</company>
