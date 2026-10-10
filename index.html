@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elewar | Game Development & Interactive Software</title>
+    <title>Elewar | Game Development & Interactive Software Studio</title>
     <meta name="description" content="Independent studio engineering high-performance interactive games and proprietary software tools. Creators of Elewar: Fused Survivors.">
     
     <!-- Tailwind CSS CDN -->
@@ -13,18 +13,19 @@
             theme: {
                 extend: {
                     colors: {
-                        brand: {
-                            bg: '#F1F5F9',        /* Light Slate/Grey background */
-                            card: '#FFFFFF',      /* Crisp white cards */
-                            border: '#E2E8F0',    /* Soft grey border */
-                            primary: '#059669',   /* Professional Mint/Sage Green */
-                            primaryHover: '#047857',
-                            text: '#0F172A',      /* Dark slate text for high contrast */
-                            muted: '#475569'     /* Readable secondary text */
+                        studio: {
+                            bg: '#F8FAFC',        /* Clean soft slate background */
+                            card: '#FFFFFF',      /* Pure white card container */
+                            darkNav: '#0F172A',   /* Premium deep charcoal navbar */
+                            border: '#E2E8F0',    /* Crisp light border */
+                            primary: '#0284C7',   /* Vibrant Sky Blue accent */
+                            primaryHover: '#0369A1',
+                            text: '#0F172A',      /* Dark slate heading text */
+                            muted: '#475569'     /* High-contrast body text */
                         }
                     },
                     fontFamily: {
-                        mono: ['JetBrains Mono', 'Fira Code', 'monospace']
+                        mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace']
                     }
                 }
             }
@@ -33,41 +34,42 @@
     
     <style>
         body {
-            background-color: #F1F5F9;
+            background-color: #F8FAFC;
             color: #0F172A;
             background-image: radial-gradient(#CBD5E1 0.75px, transparent 0.75px);
-            background-size: 20px 20px;
+            background-size: 24px 24px;
         }
-        .clean-card {
+        .studio-card {
             background: #FFFFFF;
             border: 1px solid #E2E8F0;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-            transition: all 0.2s ease-in-out;
+            box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .clean-card:hover {
-            border-color: #10B981;
-            box-shadow: 0 4px 12px -2px rgba(16, 185, 129, 0.12);
+        .studio-card:hover {
+            border-color: #0284C7;
+            box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.08), 0 8px 10px -6px rgba(2, 132, 199, 0.04);
+            transform: translateY(-2px);
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-emerald-200 selection:text-emerald-900">
+<body class="min-h-screen flex flex-col justify-between selection:bg-sky-200 selection:text-sky-900">
 
     <!-- Header Navigation -->
-    <header class="border-b border-slate-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+    <header class="bg-studio-darkNav text-white sticky top-0 z-50 border-b border-slate-800 shadow-md">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#" class="flex items-center space-x-3 group">
-                <div class="w-8 h-8 bg-emerald-600 rounded flex items-center justify-center font-bold text-white tracking-widest text-sm group-hover:bg-emerald-700 transition">EL</div>
-                <span class="font-bold text-lg tracking-wider text-slate-900">ELEWAR</span>
+                <div class="w-8 h-8 bg-sky-600 rounded flex items-center justify-center font-bold text-white tracking-widest text-sm group-hover:bg-sky-500 transition shadow-sm">EL</div>
+                <span class="font-bold text-lg tracking-wider text-white">ELEWAR</span>
             </a>
-            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
-                <a href="#games" class="hover:text-emerald-600 transition">Games</a>
-                <a href="#software" class="hover:text-emerald-600 transition">Software & Tools</a>
-                <a href="#studio" class="hover:text-emerald-600 transition">Studio</a>
-                <a href="#contact" class="hover:text-emerald-600 transition">Contact</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#games" class="hover:text-sky-400 transition">Games</a>
+                <a href="#software" class="hover:text-sky-400 transition">Software & Tools</a>
+                <a href="#studio" class="hover:text-sky-400 transition">Studio</a>
+                <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
             </nav>
             <div>
                 <a href="https://store.steampowered.com/app/2489560/Elewar_Fused_Survivors/" target="_blank" rel="noopener" 
-                   class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2 rounded shadow-sm transition inline-flex items-center space-x-2">
+                   class="bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold px-4 py-2 rounded shadow-sm transition inline-flex items-center space-x-2">
                    <span>Play on Steam</span>
                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.42 7.62 11.17l3.26-4.54c-.28-.18-.53-.4-.74-.66l-2.61 1.08c-.28-.85-.43-1.75-.43-2.68 0-4.75 3.85-8.6 8.6-8.6s8.6 3.85 8.6 8.6-3.85 8.6-8.6 8.6c-1.12 0-2.19-.22-3.17-.61l-2.1 2.92C11.16 23.9 11.58 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg>
                 </a>
@@ -79,94 +81,94 @@
 
         <!-- Hero Section -->
         <section class="space-y-6 pt-4">
-            <div class="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full text-xs text-emerald-800 font-mono font-medium">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span>Active Software & Game Development</span>
+            <div class="inline-flex items-center space-x-2 bg-sky-50 border border-sky-200 px-3.5 py-1.5 rounded-full text-xs text-sky-800 font-mono font-semibold">
+                <span class="w-2 h-2 rounded-full bg-sky-600 animate-pulse"></span>
+                <span>Active Software & Game Development Studio</span>
             </div>
             <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight max-w-4xl">
                 Engineering immersive games & high-performance interactive software.
             </h1>
             <p class="text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed">
-                Elewar is an independent software engineering studio based in Germany. Founded in 2024, we specialize in high-density gameplay systems, custom procedural frameworks, and interactive software tools.
+                Elewar is an independent game development and software engineering studio based in Germany. Founded in 2024, we build systems-heavy games, procedural algorithms, and interactive tooling.
             </p>
         </section>
 
         <!-- Stats Section -->
         <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="clean-card p-6 rounded-lg">
+            <div class="studio-card p-6 rounded-xl">
                 <div class="text-3xl font-black text-slate-900 font-mono">76,600+</div>
                 <div class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Total Units Distributed</div>
             </div>
-            <div class="clean-card p-6 rounded-lg">
-                <div class="text-3xl font-black text-emerald-600 font-mono" id="steam-rating-pct">91%</div>
-                <div class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold flex items-center gap-1">
+            <div class="studio-card p-6 rounded-xl">
+                <div class="text-3xl font-black text-sky-600 font-mono" id="steam-rating-pct">91%</div>
+                <div class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold flex items-center gap-1.5">
                     <span>Steam Rating</span>
-                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500" title="Live dynamic fetch"></span>
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500" title="Live Steam Fetch"></span>
                 </div>
             </div>
-            <div class="clean-card p-6 rounded-lg">
+            <div class="studio-card p-6 rounded-xl">
                 <div class="text-3xl font-black text-slate-900 font-mono">18,500+</div>
                 <div class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Unique Players</div>
             </div>
-            <div class="clean-card p-6 rounded-lg">
+            <div class="studio-card p-6 rounded-xl">
                 <div class="text-3xl font-black text-slate-900 font-mono" id="steam-review-count">234+</div>
                 <div class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Verified Reviews</div>
             </div>
         </section>
 
-        <!-- Games Spotlight -->
+        <!-- Games Section -->
         <section id="games" class="space-y-6">
             <div class="border-b border-slate-200 pb-4 flex items-center justify-between">
-                <h2 class="text-2xl font-bold text-slate-900">Flagship Game Title</h2>
-                <span class="text-xs font-mono text-slate-500">RELEASED: AUG 21, 2024</span>
+                <h2 class="text-2xl font-bold text-slate-900">Flagship Release</h2>
+                <span class="text-xs font-mono font-medium text-slate-500">RELEASED: AUG 21, 2024</span>
             </div>
 
-            <div class="clean-card rounded-xl p-6 md:p-8 grid md:grid-cols-12 gap-8 items-center">
+            <div class="studio-card rounded-2xl p-6 md:p-8 grid md:grid-cols-12 gap-8 items-center">
                 <div class="md:col-span-7 space-y-4">
-                    <div class="inline-block text-xs font-mono font-medium px-2.5 py-1 rounded bg-emerald-100 text-emerald-800 border border-emerald-200">
-                        Action Roguelite / Systems Design
+                    <div class="inline-block text-xs font-mono font-semibold px-3 py-1 rounded-md bg-sky-100 text-sky-900 border border-sky-200">
+                        Action Roguelite / Systems Architecture
                     </div>
                     <h3 class="text-3xl font-extrabold text-slate-900">Elewar: Fused Survivors</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">
                         A fast-paced bullet heaven roguelite packed with deep ARPG-like mechanics, elemental spellcrafting, and complex character fusion. Engineered with precise collision detection, zero contact damage mechanics, and multi-class progression loops.
                     </p>
                     
-                    <div class="grid grid-cols-2 gap-3 pt-2 text-xs font-mono text-slate-600">
+                    <div class="grid grid-cols-2 gap-3 pt-2 text-xs font-mono text-slate-700">
                         <div class="flex items-center space-x-2">
-                            <span class="text-emerald-600 font-bold">✓</span> <span>18+ Playable Classes</span>
+                            <span class="text-sky-600 font-bold">✓</span> <span>18+ Playable Classes</span>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <span class="text-emerald-600 font-bold">✓</span> <span>300+ Unlocks & Systems</span>
+                            <span class="text-sky-600 font-bold">✓</span> <span>300+ Unlocks & Systems</span>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <span class="text-emerald-600 font-bold">✓</span> <span>Crafting & Upgrade Pipeline</span>
+                            <span class="text-sky-600 font-bold">✓</span> <span>Crafting & Upgrade Pipeline</span>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <span class="text-emerald-600 font-bold">✓</span> <span>Steam Achievements</span>
+                            <span class="text-sky-600 font-bold">✓</span> <span>Steam Achievements</span>
                         </div>
                     </div>
 
                     <div class="pt-4 flex flex-wrap gap-4 items-center">
                         <a href="https://store.steampowered.com/app/2489560/Elewar_Fused_Survivors/" target="_blank" rel="noopener"
-                           class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-5 py-2.5 rounded shadow-sm transition">
+                           class="bg-sky-600 hover:bg-sky-700 text-white font-semibold text-sm px-5 py-2.5 rounded-lg shadow-sm transition">
                            View on Steam Store
                         </a>
                         <a href="https://discord.gg/pFNNXAawXN" target="_blank" rel="noopener"
-                           class="bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 font-semibold text-sm px-5 py-2.5 rounded transition">
+                           class="bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 font-semibold text-sm px-5 py-2.5 rounded-lg transition">
                            Join Discord Community
                         </a>
                     </div>
                 </div>
 
-                <div class="md:col-span-5 bg-slate-50 p-6 rounded-lg border border-slate-200 space-y-4">
-                    <div class="text-xs font-mono text-slate-500 uppercase tracking-wider font-semibold">Verified Player Feedback</div>
-                    <div class="border-l-2 border-emerald-500 pl-4 py-1">
+                <div class="md:col-span-5 bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-4">
+                    <div class="text-xs font-mono text-slate-500 uppercase tracking-wider font-bold">Verified Player Feedback</div>
+                    <div class="border-l-2 border-sky-500 pl-4 py-1">
                         <p class="text-xs text-slate-700 italic">"It's really a fantastic bullet heaven game. The meta progression is a good mix... adds its own progressions and pacing."</p>
-                        <p class="text-[10px] font-mono text-slate-500 mt-2">— Steam Reviewer</p>
+                        <p class="text-[10px] font-mono text-slate-500 mt-2">— Verified Steam Reviewer</p>
                     </div>
-                    <div class="border-l-2 border-emerald-500 pl-4 py-1">
+                    <div class="border-l-2 border-sky-500 pl-4 py-1">
                         <p class="text-xs text-slate-700 italic">"Progression is well paced, better than most paid games. No microtransactions."</p>
-                        <p class="text-[10px] font-mono text-slate-500 mt-2">— Steam Reviewer</p>
+                        <p class="text-[10px] font-mono text-slate-500 mt-2">— Verified Steam Reviewer</p>
                     </div>
                 </div>
             </div>
@@ -175,24 +177,24 @@
         <!-- Software & Tools Section -->
         <section id="software" class="space-y-6">
             <div class="border-b border-slate-200 pb-4">
-                <h2 class="text-2xl font-bold text-slate-900">Software & Interactive Tooling</h2>
-                <p class="text-xs text-slate-500 mt-1">Internal architecture and developer tools supporting production pipelines.</p>
+                <h2 class="text-2xl font-bold text-slate-900">Software & Developer Tools</h2>
+                <p class="text-xs text-slate-500 mt-1">Internal architecture and utility tools designed to power automated game logic and analytics.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="clean-card p-6 rounded-lg space-y-3">
-                    <div class="text-emerald-700 font-mono text-xs uppercase tracking-wider font-bold">Framework Design</div>
-                    <h3 class="text-lg font-bold text-slate-900">Procedural Generation & Data Systems</h3>
+                <div class="studio-card p-6 rounded-xl space-y-3">
+                    <div class="text-sky-700 font-mono text-xs uppercase tracking-wider font-bold">Framework Design</div>
+                    <h3 class="text-lg font-bold text-slate-900">Procedural Generation & System Frameworks</h3>
                     <p class="text-sm text-slate-600 leading-relaxed">
-                        Custom procedural frameworks designed for dynamic spell scaling, real-time balance tweaks, and state management across entity-dense environments.
+                        In-house algorithmic frameworks developed for dynamic spell scaling, procedural balancing, and high-frequency state management in entity-dense environments.
                     </p>
                 </div>
 
-                <div class="clean-card p-6 rounded-lg space-y-3">
-                    <div class="text-emerald-700 font-mono text-xs uppercase tracking-wider font-bold">Developer Utilities</div>
-                    <h3 class="text-lg font-bold text-slate-900">Automated Data & Telemetry Tooling</h3>
+                <div class="studio-card p-6 rounded-xl space-y-3">
+                    <div class="text-sky-700 font-mono text-xs uppercase tracking-wider font-bold">Internal Utilities</div>
+                    <h3 class="text-lg font-bold text-slate-900">Automated Telemetry & Balancing Tooling</h3>
                     <p class="text-sm text-slate-600 leading-relaxed">
-                        Internal software scripts engineered to analyze game economy balancing, player progression curves, and automated testing routines.
+                        Custom developer scripts and automation tooling engineered to evaluate game economics, player progression loops, and continuous testing suites.
                     </p>
                 </div>
             </div>
@@ -201,55 +203,54 @@
         <!-- Studio & Engineering -->
         <section id="studio" class="space-y-6">
             <div class="border-b border-slate-200 pb-4">
-                <h2 class="text-2xl font-bold text-slate-900">Studio & Engineering</h2>
+                <h2 class="text-2xl font-bold text-slate-900">Studio Engineering</h2>
             </div>
-            <div class="clean-card p-6 md:p-8 rounded-lg space-y-4">
+            <div class="studio-card p-6 md:p-8 rounded-xl space-y-4">
                 <p class="text-slate-600 text-sm leading-relaxed">
-                    Founded in 2024, Elewar operates as an agile, engineering-first studio. We focus on low-overhead execution, high-performance gameplay systems, and building high-value interactive software directly for global audiences.
+                    Founded in 2024, Elewar operates as a streamlined software studio based in Bonn, Germany. We focus on high-efficiency execution, scalable game logic, and building interactive software products directly for a global audience.
                 </p>
             </div>
         </section>
 
     </main>
 
-    <!-- Footer & Impressum (Contact) -->
-    <footer id="contact" class="border-t border-slate-200 bg-white mt-16 py-12">
+    <!-- Footer & Contact (Legally Compliant German Impressum) -->
+    <footer id="contact" class="bg-studio-darkNav text-slate-300 mt-20 py-12 border-t border-slate-800">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
             <div class="space-y-3">
                 <div class="flex items-center space-x-2">
-                    <div class="w-6 h-6 bg-emerald-600 rounded flex items-center justify-center font-bold text-white text-xs">EL</div>
-                    <span class="font-bold text-slate-900 tracking-wider">ELEWAR</span>
+                    <div class="w-6 h-6 bg-sky-600 rounded flex items-center justify-center font-bold text-white text-xs">EL</div>
+                    <span class="font-bold text-white tracking-wider">ELEWAR</span>
                 </div>
-                <p class="text-xs text-slate-500">Independent Software & Game Development Studio</p>
-                <p class="text-xs text-slate-400">© 2024–2026 Elewar. All rights reserved.</p>
+                <p class="text-xs text-slate-400">Independent Game & Interactive Software Studio</p>
+                <p class="text-xs text-slate-500">© 2024–2026 Elewar. All rights reserved.</p>
             </div>
 
-            <!-- Links -->
+            <!-- Connect Links -->
             <div class="space-y-2 text-xs">
-                <div class="font-bold text-slate-900 uppercase tracking-wider mb-2">Connect</div>
-                <div><a href="https://store.steampowered.com/app/2489560/Elewar_Fused_Survivors/" target="_blank" rel="noopener" class="text-slate-600 hover:text-emerald-600 transition">Steam Store</a></div>
-                <div><a href="https://discord.gg/pFNNXAawXN" target="_blank" rel="noopener" class="text-slate-600 hover:text-emerald-600 transition">Discord Community</a></div>
-                <div><a href="mailto:business@elewar.com" class="text-slate-600 hover:text-emerald-600 transition">business@elewar.com</a></div>
+                <div class="font-bold text-white uppercase tracking-wider mb-2">Connect</div>
+                <div><a href="https://store.steampowered.com/app/2489560/Elewar_Fused_Survivors/" target="_blank" rel="noopener" class="text-slate-300 hover:text-sky-400 transition">Steam Store Page</a></div>
+                <div><a href="https://discord.gg/pFNNXAawXN" target="_blank" rel="noopener" class="text-slate-300 hover:text-sky-400 transition">Discord Community</a></div>
+                <div><a href="mailto:business@elewar.com" class="text-slate-300 hover:text-sky-400 transition">business@elewar.com</a></div>
             </div>
 
             <!-- German Impressum (§ 5 DDG) -->
-            <div class="space-y-2 text-xs text-slate-600 border-l md:border-l-0 border-slate-200 pl-4 md:pl-0">
-                <div class="font-bold text-slate-900 uppercase tracking-wider mb-2">Impressum (Legal Notice)</div>
-                <p class="font-semibold text-slate-800">Elewar Gaming</p>
+            <div class="space-y-2 text-xs text-slate-400 border-l md:border-l-0 border-slate-800 pl-4 md:pl-0">
+                <div class="font-bold text-white uppercase tracking-wider mb-2">Impressum (Legal Notice)</div>
+                <p class="font-semibold text-white">Elewar Gaming</p>
                 <p>Inhaber: Alexander Krasnobaev</p>
                 <p>Provinzialstr. 56</p>
                 <p>53127 Bonn, Germany</p>
-                <p class="pt-1"><span class="text-slate-400">E-Mail:</span> business@elewar.com</p>
-                <p><span class="text-slate-400">USt-IdNr:</span> DE465255647</p>
+                <p class="pt-1"><span class="text-slate-500">E-Mail:</span> business@elewar.com</p>
+                <p><span class="text-slate-500">USt-IdNr:</span> DE465255647</p>
             </div>
         </div>
     </footer>
 
-    <!-- Dynamic Steam Review Fetcher -->
+    <!-- Dynamic Live Steam Rating Script -->
     <script>
         async function fetchSteamStats() {
             try {
-                // Using CORS proxy to query Steam App Reviews API for App ID 2489560
                 const response = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://store.steampowered.com/appreviews/2489560?json=1&language=all'));
                 if (!response.ok) return;
                 
